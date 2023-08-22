@@ -30,3 +30,10 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
+
+document.addEventListener("keydown", (event) => {
+  if (event.keyCode === 82) {
+    resetGame();
+    gameLoop();
+  }
+});
