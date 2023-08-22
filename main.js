@@ -32,13 +32,11 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("click", (event) => {
-  if (event.keyCode === 32) {
-    if (!gameOver) {
+  if (!gameOver) {
       bird.velocityY = bird.jumpPower;
     } else {
       startGame();
     }
-  }
 });
 
 document.addEventListener("keydown", (event) => {
